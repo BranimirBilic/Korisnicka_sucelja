@@ -1,8 +1,35 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Dentech`,
+    description: ``,
+    menuItems: [
+      {
+        text: "O nama",
+        path: "/",
+      },
+      {
+        text: "Usluge",
+        path: "/usluge",
+      },
+      {
+        text: "Blog",
+        path: "/blog",
+      },
+      {
+        text: "Cjenik",
+        path: "/cjenik",
+      },
+      {
+        text: "Kontakt",
+        path: "/kontakt",
+      },
+      {
+        text: "Naruči se",
+        path: "/naruci-se",
+      },
+    ],
+    author: `BranimirIvan`,
+
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -32,3 +59,5 @@ module.exports = {
     // `gatsby-plugin-offline`,
   ],
 }
+
+

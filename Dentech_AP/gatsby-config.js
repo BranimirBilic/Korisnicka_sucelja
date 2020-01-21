@@ -1,48 +1,49 @@
 module.exports = {
   siteMetadata: {
-    title: `Dentech`,
-    description: ``,
-    menuItems: [
+    title: `Gatsby Default Starter`,
+    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    pages:[
       {
-        text: "O nama",
-        path: "/",
+        title:'O nama',
+        path:'/'
       },
       {
-        text: "Usluge",
-        path: "/usluge",
+        title:'Usluge',
+        path:'/usluge'
       },
       {
-        text: "Blog",
-        path: "/blog",
+        title:'Cjenik',
+        path:'/cjenik'
       },
       {
-        text: "Cjenik",
-        path: "/cjenik",
+        title:'Blog',
+        path:'/blog'
       },
       {
-        text: "Kontakt",
-        path: "/kontakt",
+        title:'Kontakt',
+        path:'/'
       },
       {
-        text: "Naruči se",
-        path: "/naruci-se",
+        title:'Naruči se',
+        path:'/narucise'
       },
     ],
-    author: `BranimirIvan`,
-
+    author: `@gatsbyjs`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    {
+    /*{
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
-    },
+    },*/
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
+    `gatsby-plugin-emotion`,
+    `gatsby-plugin-theme-ui`,
+    /*{
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-default`,
@@ -53,11 +54,9 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
-    },
+    },*/
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
 }
-
-

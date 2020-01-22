@@ -4,26 +4,32 @@ module.exports = {
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     pages:[
       {
+        id:1,
         title:'O nama',
         path:'/'
       },
       {
+        id:2,
         title:'Usluge',
         path:'/usluge'
       },
       {
+        id:3,
         title:'Cjenik',
         path:'/cjenik'
       },
       {
+        id:4,
         title:'Blog',
         path:'/blog'
       },
       {
+        id:5,
         title:'Kontakt',
         path:'/'
       },
       {
+        id:6,
         title:'Naruči se',
         path:'/narucise'
       },
@@ -43,6 +49,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-emotion`,
     `gatsby-plugin-theme-ui`,
+    `gatsby-plugin-sass`,
     /*{
       resolve: `gatsby-plugin-manifest`,
       options: {

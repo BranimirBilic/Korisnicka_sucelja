@@ -10,8 +10,8 @@ class NavBar extends Component {
         return (
             <div style ={navBarStyle}>
                 {
-                    this.props.navlinks.map((navlink) => (                 
-                             <Navlink link = {navlink}/>                                          
+                    this.props.navlinks.map((navlink) => (
+                             <Navlink link = {navlink}/>                                                                    
                     ))
                 }
             </div>
@@ -28,6 +28,7 @@ const navBarStyle = {
     margin:"0px",
     m:0,
     width:"100%",
+
 
     /*
     display: "flex",

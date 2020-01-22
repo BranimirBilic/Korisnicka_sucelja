@@ -57,6 +57,8 @@ import Container from './container';
 import { useStaticQuery, graphql } from "gatsby";
 import './layout.css';
 
+import ResponsiveNavigation from './navigation/ResponsiveNavigation';
+
 const SiteContainer = props => (
   <div style = {sitecontainerstyle}
     {...props}
@@ -97,6 +99,7 @@ const Layout = ({children}) =>{
         site {
           siteMetadata {
             pages {
+              id
               title
               path
             }
@@ -107,8 +110,7 @@ const Layout = ({children}) =>{
 
     return ( 
         <SiteContainer>
-          <NavBar navlinks = {data.site.siteMetadata.pages}/> 
-
+          <ResponsiveNavigation navLinks={data.site.siteMetadata.pages}/>
           <Container>{children}</Container>
         </SiteContainer>    
   );
@@ -119,8 +121,6 @@ const sitecontainerstyle = {
   flexDirection: "column",
   minHeight: "100vh",
   margin: "0 auto",
-  
 }
-
 
 export default Layout;

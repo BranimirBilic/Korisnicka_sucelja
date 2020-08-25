@@ -1,0 +1,17 @@
+.DivStyles{
+    display:flex;
+    justify-content: start;
+    margin-left: 1em;
+    margin-right: 2em;
+}
+
+.TextDiv{
+    width:50%;
+    height:100%;
+}
+
+@media screen and (max-width: 850px){
+    .DivStyles{
+        flex-direction: column;
+    }
+}

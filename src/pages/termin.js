@@ -5,7 +5,7 @@ import Select from 'react-select'
 import Styles from './termin.module.css'
 import DatePicker from 'react-datepicker';
 import moment from 'moment';
-import {Link} from 'gatsby'
+import {Link, navigate} from 'gatsby'
  
 import 'react-datepicker/dist/react-datepicker.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -45,6 +45,7 @@ const Termin = () => {
 
   const onSubmitClick = e => {
     alert("Odabrali ste pregled : " + usluga + "\nU vrmenenu: "+ startDate)
+    navigate('/');
   }
 
   return(
@@ -69,12 +70,10 @@ const Termin = () => {
                     onClick={e => onSubmitClick(e.target)}
                 >Zakaži termin.
             </button>
-          </div>
-          
+          </div>         
         </div>
     </Layout>
   );
-  
 }
 
 export default Termin

@@ -4,6 +4,10 @@
     border-width: 2px;
 }
 
-.LinkStyle{
-    color:#f58233;
+.Button{
+    color:"black";
+    text-align: center;
+    text-decoration: none;
+    background-color: #f58233;
+    color:white;
 }

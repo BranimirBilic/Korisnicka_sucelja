@@ -37,7 +37,7 @@ function HomePost() {
                 </p>
             </div>
             <div className = {styles.TextDiv}>
-                <Img fluid={data.file.childImageSharp.fluid} alt="logo"/>
+                <Img fluid={data.file.childImageSharp.fluid} style = {{width:"70%","margin-left":"25%"}} alt="logo"/>
             </div>                            
         </div>
     )

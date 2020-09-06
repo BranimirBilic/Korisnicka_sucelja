@@ -14,6 +14,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
+        
       />
       <article>
         <header>
@@ -23,7 +24,8 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
               marginBottom: 0,
             }}
           >
-            {post.frontmatter.title}
+            <span style = {{color:"#f58233"}}>
+            {post.frontmatter.title}</span>
           </h1>
           <p
             style={{
@@ -32,7 +34,6 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
               //marginBottom: rhythm(1),
             }}
           >
-            {post.frontmatter.date}
           </p>
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />

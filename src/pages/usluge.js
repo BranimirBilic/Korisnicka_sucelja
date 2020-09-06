@@ -73,7 +73,7 @@ export default ({ data }) => {
                 <PostInfo>
                   <PreTitle>{node.frontmatter.category}</PreTitle>
                   <Title>{node.frontmatter.title}</Title>
-	                <Subtitle>{node.frontmatter.subtitle}</Subtitle>
+	                <Subtitle></Subtitle>
                   <Excrept>{node.excerpt}</Excrept>
                 </PostInfo>
               </SinglePost>

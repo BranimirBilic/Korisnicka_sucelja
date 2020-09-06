@@ -18,7 +18,9 @@ function HomePost() {
     `)
     return (
         <div className = {styles.DivStyles} >
+            <br/>
             <div className = {styles.TextDiv}>                 
+            <br/>
                 <p>               
                     <h3>
                         VODEĆI DENTALNI CENTAR U SPLITU

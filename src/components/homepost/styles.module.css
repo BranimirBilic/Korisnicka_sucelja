@@ -8,10 +8,24 @@
 .TextDiv{
     width:50%;
     height:100%;
+    font-size: x-large;
 }
+
+h3{
+    text-align: center;
+    color: #f58233;
+    font-size: 80%;
+}
+
+
+
 
 @media screen and (max-width: 850px){
     .DivStyles{
         flex-direction: column;
+    }
+    .TextDiv{
+        width: 100%;
+        margin: 0 auto;
     }
 }

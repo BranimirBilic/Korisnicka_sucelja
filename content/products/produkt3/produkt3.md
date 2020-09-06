@@ -2,7 +2,6 @@
 title: Protetika
 category: "Product"
 featuredImage: ./protetika.jpg
-subtitle: "sit amet consectetur"
 date: "2018-11-27"
 update: "2018-11-27"
 tags: ["protetika", "krunice", "krunica", "metal", "keramika", "titan", "cirkon", "proteza", "most" ]

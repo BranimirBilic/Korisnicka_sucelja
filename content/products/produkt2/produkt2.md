@@ -2,7 +2,6 @@
 title: Estetska stomatologija
 category: "Product"
 featuredImage: ./estetskastomatologija.jpg
-subtitle: "sit amet consectetur"
 date: "2018-11-27"
 update: "2018-11-27"
 tags: ["izbjeljivanje", "ljuskice"]

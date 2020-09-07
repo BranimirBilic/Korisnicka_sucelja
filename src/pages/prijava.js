@@ -99,12 +99,12 @@ class Prijava extends React.Component {
       <Layout>
         <div className = {styles.DivStyle}>
           <form onSubmit={this.handleSubmit} className = {styles.Container}>
-          <label>
-            email:
+          <label style = {{"margin-top": "30px"}}>
+            email: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <input type="text" value={this.state.value} onChange={this.onUserChange} />
           </label>
           <label>
-            password:
+            password: &nbsp;
             <input type="password" value={this.state.value} onChange={this.onPasswordChange} />
           </label>
           <button 
@@ -112,7 +112,7 @@ class Prijava extends React.Component {
                     className={styles.Button}
                     onClick={this.onSubmitClick}
                 >Prijava</button>
-          <Link to = "/registracija"> Nemate profil? Registrajte se preko ovog linka.</Link>     
+          <Link style = {{"margin-bottom": "30px"}} to = "/registracija"> Nemate profil? Registrajte se preko ovog linka.</Link>     
         </form>
         </div>
       </Layout>
